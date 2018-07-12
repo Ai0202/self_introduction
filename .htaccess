@@ -1,0 +1,4 @@
+RewriteEngine on
+Options +FollowSymLinks
+RewriteCond %{THE_REQUEST} ^.*/index.(html|php)
+RewriteRule ^(.*)index.(html|php)$ https://%{HTTP_HOST}/$1 [R=301,L]
